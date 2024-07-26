@@ -33,7 +33,7 @@ const AddTodo: React.FC<AddTodoProps> = ({ addTodo }) => {
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Add a new todo"
             />
-            <button type="submit">Add</button>
+            <button type="submit">Add Todo</button>
         </form>
     );
 };
