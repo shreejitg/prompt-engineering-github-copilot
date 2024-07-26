@@ -12,6 +12,10 @@ type Todo = {
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
 
+  /**
+   * Adds a new todo to the list of todos.
+   * @param {string} text - The text of the todo.
+   */
   const addTodo = (text: string) => {
     const newTodo: Todo = {
       id: Date.now(),
@@ -21,6 +25,10 @@ function App() {
     setTodos([...todos, newTodo]);
   };
 
+  /**
+   * Toggles the completion status of a todo item.
+   * @param id - The ID of the todo item to toggle.
+   */
   const toggleTodo = (id: number) => {
     setTodos(
       todos.map(todo =>
